@@ -139,10 +139,10 @@
                                                                     <select class="form-control form-control-sm"
                                                                             size="2" name="nameRoles"
                                                                             multiple="multiple">
-                                                                        <option th:each="role : ${roles}"
+                                                                        <option th:each="role : ${user.getRoles()}"
                                                                                 th:value="${role.getId()}"
-                                                                                th:text="${role.getRole()}"
-                                                                                th:selected="${role.role} == USER"></option>
+                                                                                th:text="${role.getRole()}"></option>
+
                                                                     </select>
                                                                 </label>
                                                             </div>
